@@ -1,0 +1,97 @@
+form,
+table,
+td,
+input,
+label,
+div,
+body {
+    font: 10pt serif;
+    background: #ffffff;
+    color: #222222;
+}
+
+div {
+    text-align: left;
+    margin: 0px;
+    padding: 1px;
+    font-size: 10px;
+    width: auto;
+    height: auto;
+}
+
+#div0 {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 220px;
+    height: auto;
+    border: 1px solid #666666;
+    padding: 0px;
+    background: #ffffff;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#div0 a {
+    color: #000000 !important;
+    text-decoration: none
+}
+
+#div0 a:hover {
+    color: #777777 !important;
+    text-decoration: underline
+}
+
+#div0 a:focus {
+    color: #ff0000;
+}
+
+#div0 ul {
+    padding: 0px 3px 3px 5px;
+    margin: 0px;
+}
+
+#div0 li {
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#div0 li.lbl {
+    color: #ff4500;
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+#div1 {
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    width: 40%;
+    height: 700px;
+    overflow: scroll;
+    border: 1px solid #888888;
+    padding: 2px;
+    color: #333333;
+    background: #ffffff;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#div2 {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border: 1px solid #ff0000;
+    width: 40%;
+    height: 700px;
+    overflow: scroll;
+    border: 1px solid #888888;
+    padding: 2px;
+    color: #333333;
+    background: #f0f0f0;
+    font-weight: normal;
+    font-size: 10px;
+
+}

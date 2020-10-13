@@ -1,0 +1,8 @@
+ {
+     "titolo": "Discipline",
+     "anno": "anno=2000",
+     "loc": {
+         "val": "viterbo"
+     },
+     "materie": ["lettere", "lingue", "filosofia", "matematica", "fisica", "informatica", "legge", "chimica"]
+ }

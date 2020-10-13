@@ -1,0 +1,27 @@
+ <table id='rows1' class='list'> <tr>
+
+ <%
+ for( var col in row0){
+   var label=row0[col].label;
+ %>
+    <td class='head'><%=label%></td>
+ <%}%>
+  </tr>
+
+  <%
+  for(var i=0;i<rows.length;i++) {
+    row=rows[i];
+    var num='row'+i;
+  %>
+  <tr id='<%=num%>'>
+   <%
+   for( var col in row) {
+      var value=row[col];
+      var limit=row0[col].limit;
+    %>
+    <td><input type='text' name='<%=col%>' value='<%=value%>' size='<%=limit%>' maxlength='<%=limit%>' /></td>
+  <%}%>
+  </tr>
+  <%}%>
+
+</table>

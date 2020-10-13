@@ -1,0 +1,52 @@
+{
+    "row0": {
+        "anagid": {
+            "limit": 10,
+            "type": "int",
+            "label": "anagid",
+            "value": 100
+        },
+        "cognome": {
+            "limit": 30,
+            "type": "str",
+            "label": "Cognome",
+            "value": "Ariosti"
+        },
+        "nome": {
+            "limit": 30,
+            "type": "str",
+            "label": "Nome",
+            "value": "Marco"
+        },
+        "datanasc": {
+            "limit": 10,
+            "type": "date",
+            "label": "Data Nasc,"
+        },
+        "comunasc": {
+            "limit": 30,
+            "type": "str",
+            "label": "Comu.Nasc."
+        },
+        "naznasc": {
+            "limit": 10,
+            "type": "str",
+            "label": "Naz.Nasc."
+        },
+        "sesso": {
+            "limit": 2,
+            "type": "str",
+            "label": "MF"
+        },
+        "codfisc": {
+            "limit": 16,
+            "type": "str",
+            "label": "Cod.Fisc."
+        },
+        "piva": {
+            "limit": 11,
+            "type": "str",
+            "label": "P.Iva"
+        }
+    }
+}

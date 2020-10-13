@@ -1,0 +1,22 @@
+  <table class='list'>
+  <tr>
+    <td class='head'>id</td>
+    <td class='head'>cognome.</td>
+    <td class='head'>nome</td>
+    <td class='head'>data nasc.</td>
+    <td class='head'>sesso</td>
+    <td class='head'>codfisc</td>
+  </tr>
+  <% for(var i=0; i<rows.length; i++){%>
+  <tr >
+    <td class='row'><%=rows[i][0]%></td>
+    <td class='row'><%=rows[i][1]%></td>
+    <td class='row'><%=rows[i][2]%></td>
+    <td class='row'><%=rows[i][3]%></td>
+    <td class='row'><%=rows[i][4]%></td>
+    <td class='row'><%=rows[i][5]%></td>
+    </tr>
+  <%}%>
+  </table>
+  <br/>
+

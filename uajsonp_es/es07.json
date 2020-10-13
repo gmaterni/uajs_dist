@@ -1,0 +1,159 @@
+fn07({
+  "kind" : "projecthosting#user",
+  "id" : "@UxZRR1xTABRBXwB%2B",
+  "projects" : [ {
+    "kind" : "projecthosting#project",
+    "name" : "uaejs",
+    "externalId" : "uaejs",
+    "htmlLink" : "/p/uaejs/",
+    "summary" : "micro template in javascript",
+    "description" : "Micro template in javascript .erver agnostico.\r\nPuò utilizzre per i dati dei file piatti in formato json o csv.",
+    "labels" : [ "Template", "JavaScript" ],
+    "versionControlSystem" : "git",
+    "repositoryUrls" : [ "https://uaejs.googlecode.com/git/" ],
+    "issuesConfig" : {
+      "kind" : "projecthosting#projectIssueConfig",
+      "statuses" : [ {
+        "status" : "New",
+        "meansOpen" : true,
+        "description" : "Issue has not had initial review yet"
+      }, {
+        "status" : "Accepted",
+        "meansOpen" : true,
+        "description" : "Problem reproduced / Need acknowledged"
+      }, {
+        "status" : "Started",
+        "meansOpen" : true,
+        "description" : "Work on this issue has begun"
+      }, {
+        "status" : "Fixed",
+        "meansOpen" : false,
+        "description" : "Developer made source code changes, QA should verify"
+      }, {
+        "status" : "Verified",
+        "meansOpen" : false,
+        "description" : "QA has verified that the fix worked"
+      }, {
+        "status" : "Invalid",
+        "meansOpen" : false,
+        "description" : "This was not a valid issue report"
+      }, {
+        "status" : "Duplicate",
+        "meansOpen" : false,
+        "description" : "This report duplicates an existing issue"
+      }, {
+        "status" : "WontFix",
+        "meansOpen" : false,
+        "description" : "We decided to not take action on this issue"
+      }, {
+        "status" : "Done",
+        "meansOpen" : false,
+        "description" : "The requested non-coding task was completed"
+      } ],
+      "labels" : [ {
+        "label" : "Type-Defect",
+        "description" : "Report of a software defect"
+      }, {
+        "label" : "Type-Enhancement",
+        "description" : "Request for enhancement"
+      }, {
+        "label" : "Type-Task",
+        "description" : "Work item that doesn't change the code or docs"
+      }, {
+        "label" : "Type-Review",
+        "description" : "Request for a source code review"
+      }, {
+        "label" : "Type-Other",
+        "description" : "Some other kind of issue"
+      }, {
+        "label" : "Priority-Critical",
+        "description" : "Must resolve in the specified milestone"
+      }, {
+        "label" : "Priority-High",
+        "description" : "Strongly want to resolve in the specified milestone"
+      }, {
+        "label" : "Priority-Medium",
+        "description" : "Normal priority"
+      }, {
+        "label" : "Priority-Low",
+        "description" : "Might slip to later milestone"
+      }, {
+        "label" : "OpSys-All",
+        "description" : "Affects all operating systems"
+      }, {
+        "label" : "OpSys-Windows",
+        "description" : "Affects Windows users"
+      }, {
+        "label" : "OpSys-Linux",
+        "description" : "Affects Linux users"
+      }, {
+        "label" : "OpSys-OSX",
+        "description" : "Affects Mac OS X users"
+      }, {
+        "label" : "Milestone-Release1.0",
+        "description" : "All essential functionality working"
+      }, {
+        "label" : "Component-UI",
+        "description" : "Issue relates to program UI"
+      }, {
+        "label" : "Component-Logic",
+        "description" : "Issue relates to application logic"
+      }, {
+        "label" : "Component-Persistence",
+        "description" : "Issue relates to data storage components"
+      }, {
+        "label" : "Component-Scripts",
+        "description" : "Utility and installation scripts"
+      }, {
+        "label" : "Component-Docs",
+        "description" : "Issue relates to end-user documentation"
+      }, {
+        "label" : "Security",
+        "description" : "Security risk to users"
+      }, {
+        "label" : "Performance",
+        "description" : "Performance issue"
+      }, {
+        "label" : "Usability",
+        "description" : "Affects program usability"
+      }, {
+        "label" : "Maintainability",
+        "description" : "Hinders future changes"
+      } ],
+      "prompts" : [ {
+        "name" : "Defect report from user",
+        "title" : "Enter one-line summary",
+        "description" : "What steps will reproduce the problem?\n1. \n2. \n3. \n\nWhat is the expected output? What do you see instead?\n\n\nWhat version of the product are you using? On what operating system?\n\n\nPlease provide any additional information below.\n",
+        "titleMustBeEdited" : true,
+        "status" : "New",
+        "labels" : [ "Type-Defect", "Priority-Medium" ]
+      }, {
+        "name" : "Defect report from developer",
+        "title" : "Enter one-line summary",
+        "description" : "What steps will reproduce the problem?\n1. \n2. \n3. \n\nWhat is the expected output? What do you see instead?\n\n\nPlease use labels and text to provide additional information.\n",
+        "titleMustBeEdited" : true,
+        "status" : "Accepted",
+        "labels" : [ "Type-Defect", "Priority-Medium" ],
+        "membersOnly" : true
+      }, {
+        "name" : "Review request",
+        "title" : "Code review request",
+        "description" : "Branch name:\n\nPurpose of code changes on this branch:\n\n\nWhen reviewing my code changes, please focus on:\n\n\nAfter the review, I'll merge this branch into:\n/trunk\n",
+        "status" : "New",
+        "labels" : [ "Type-Review", "Priority-Medium" ],
+        "membersOnly" : true,
+        "defaultToMember" : false
+      } ],
+      "defaultPromptForMembers" : 1,
+      "defaultPromptForNonMembers" : 0
+    },
+    "role" : "owner",
+    "members" : [ {
+      "kind" : "projecthosting#issuePerson",
+      "name" : "giuseppe.materni",
+      "htmlLink" : "https://code.google.com/u/11444559315511/"
+    } ],
+    "kind" : "projecthosting#issueList",
+    "totalResults" : 0
+  } ]
+});

@@ -1,0 +1,96 @@
+<!doctype html>
+<html >
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ejstest</title>
+<script type="text/javascript">
+var args = {
+  "row0": {
+    "anagid": {
+      "limit": 10,
+      "type": "int",
+      "label": "anagid",
+      "value": 100
+    },
+    "cognome": {
+      "limit": 30,
+      "type": "str",
+      "label": "Cognome",
+      "value": "Ariosti"
+    },
+    "nome": {
+      "limit": 30,
+      "type": "str",
+      "label": "Nome",
+      "value": "Marco"
+    },
+    "datanasc": {
+      "limit": 10,
+      "type": "date",
+      "label": "Data Nasc,"
+    },
+    "comunasc": {
+      "limit": 30,
+      "type": "str",
+      "label": "Comu.Nasc."
+    },
+    "naznasc": {
+      "limit": 10,
+      "type": "str",
+      "label": "Naz.Nasc."
+    },
+    "sesso": {
+      "limit": 2,
+      "type": "str",
+      "label": "MF"
+    },
+    "codfisc": {
+      "limit": 16,
+      "type": "str",
+      "label": "Cod.Fisc."
+    },
+    "piva": {
+      "limit": 11,
+      "type": "str",
+      "label": "P.Iva"
+    }
+  }
+}
+
+var fnEjs = function(pars) {
+  var up = [];
+  var row0 = pars['row0'];
+  up.push(" <form id='form1' class='frm'><table class='frm'> ");
+  for (var col in row0) {
+    var value = row0[col].value;
+    var limit = row0[col].limit;
+    var label = row0[col].label;
+    up.push("  <tr>    <td><label>");
+    up.push(label);
+    up.push(":</label></td>    <td><input type='text' name='");
+    up.push(col);
+    up.push("' id='");
+    up.push(col);
+    up.push("' value='");
+    up.push(value);
+    up.push("' size='");
+    up.push(limit);
+    up.push("' maxlength='");
+    up.push(limit);
+    up.push("' /></td>  </tr>  ");
+  }
+  up.push("</table></form>  ");;
+  return up.join("");
+};
+var html = fnEjs(args);
+</script>
+</head>
+<body>
+<div id='ua'></div>
+<script type="text/javascript" >
+ var e=document.getElementById('ua');
+ e.innerHTML=html;
+</script>
+</body>
+</html>

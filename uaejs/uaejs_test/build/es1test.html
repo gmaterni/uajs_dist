@@ -1,0 +1,99 @@
+<!doctype html>
+<html >
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ejstest</title>
+<script type="text/javascript">
+var args = {
+  "titolo": "Anagrafica",
+  "anag": [{
+    "id": 0,
+    "anagid": 56,
+    "cognome": "Albotellini",
+    "nome": "Paolo",
+    "datanasc": "24-02-1950",
+    "sesso": "m"
+  }, {
+    "id": 1,
+    "anagid": 52,
+    "cognome": "Allorni",
+    "nome": "Rosa",
+    "datanasc": "24-02-1953",
+    "sesso": "f"
+  }, {
+    "id": 2,
+    "anagid": 54,
+    "cognome": "Antella",
+    "nome": "Emma",
+    "datanasc": "06-03-1982",
+    "sesso": "f"
+  }, {
+    "id": 3,
+    "anagid": 51,
+    "cognome": "Arcetri",
+    "nome": "Dario",
+    "datanasc": "12-12-2000",
+    "sesso": "m"
+  }, {
+    "id": 4,
+    "anagid": 49,
+    "cognome": "Barmalloni",
+    "nome": "Alceo",
+    "datanasc": "12-11-1940",
+    "sesso": "m"
+  }, {
+    "id": 5,
+    "anagid": 48,
+    "cognome": "Catoni",
+    "nome": "Tommaso",
+    "datanasc": "01-10-1980",
+    "sesso": "m"
+  }, {
+    "id": 6,
+    "anagid": 60,
+    "cognome": "Deandri",
+    "nome": "Alfonso",
+    "datanasc": "12-01-1970",
+    "sesso": "m"
+  }]
+};
+
+var fnEjs = function(pars) {
+  var up = [];
+  var titolo = pars['titolo'];
+  var anag = pars['anag'];
+  up.push("  <h1>");
+  up.push(titolo);
+  up.push("</h1><br/>  <table class='list'>  <tr>    <td class='head'>id</td>    <td class='head'>cognome.</td>    <td class='head'>nome</td>    <td class='head'>data nasc.</td>    <td class='head'>sesso</td>    <td class='head'>codfisc</td>  </tr> ");
+  for (var i = 0; i < anag.length; i++) {
+    up.push("    <tr id='anagid=\"");
+    up.push(anag[i].id);
+    up.push("\"'\ >    <td class=\"row\">");
+    up.push(anag[i].anagid);
+    up.push("</td>    <td class='row'>");
+    up.push(anag[i].cognome);
+    up.push("</td>    <td class='row'>");
+    up.push(anag[i].nome);
+    up.push("</td>    <td class='row'>");
+    up.push(anag[i].datanasc);
+    up.push("</td>    <td class='row'>");
+    up.push(anag[i].sesso);
+    up.push("</td>    <td class='row'>");
+    up.push(anag[i].codfisc);
+    up.push("</td>    </tr>");
+  }
+  up.push("</table>");;
+  return up.join("");
+};
+var html = fnEjs(args);
+</script>
+</head>
+<body>
+<div id='ua'></div>
+<script type="text/javascript" >
+ var e=document.getElementById('ua');
+ e.innerHTML=html;
+</script>
+</body>
+</html>

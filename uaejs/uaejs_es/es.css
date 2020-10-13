@@ -1,0 +1,49 @@
+form,table,td,input,label,div,body{font:10pt serif; background:#ffffff;color:#000000;}
+div {text-align:left;margin:0px;padding:0px;font-size:1.0em;width:auto;height:auto;}
+#menu{border:2px solid #aaaaaa; }
+#menu ul{padding:0px 3px 3px 5px;margin:2px;}
+#menu li{padding:2px 0px 0px 0px;margin:0px;list-style:none;font-size: 1.2em;font-weight: bold;}
+#menu li.label{ padding: 2px 0px 0px 0px; margin: 0px; list-style: none;font-size:1.1em; font-weight:bold;color:#000000; }
+
+#list {border: 2px solid #aaaaaa; }
+#list ul { padding: 0px 3px 3px 5px; margin: 0px;  }
+#list li{ padding: 2px 0px 0px 0px; margin: 0px; list-style: none; font-weight: bold; font-size: 1.1em;}
+
+a{color:#666666;font-size:1.0em;font-weight:bold;text-decoration:none;text-align: right;}
+a:hover{color:#000000;text-decoration:underline}
+a:focus{color:#ff0000;}
+
+.ejs {color:#00c90d; }
+.js {color:#0f4fa8; }
+.data {color:#ff9f00; }
+.srchtml {color:#ff0700; }
+.html {color:#707070; }
+
+a.ejs:hover{color:#000000;text-decoration:underline}
+a.js:hover{color:#000000;text-decoration:underline}
+a.data:hover{color:#000000;text-decoration:underline}
+a.html:hover{color:#000000;text-decoration:underline}
+
+#ejs{border:2px solid #00c90d;padding:0px;margin:0px;}
+#js{border:2px solid #0f4fa8;padding:0px;margin:0px;}
+#data{border:2px solid #ff9f00;padding:0px;margin:0px;}
+#srchtml{border:2px solid #ff0700;padding:0px;margin:0px;}
+#html{border:2px solid #707070;padding:0px;margin:0px;}
+
+a.sh  {
+    font-style: italic;
+    padding: 2px 5px 2px 5px;
+    margin-left: 9px;
+    background: #f0f0f0;
+}
+
+textarea{
+    color:#555555;
+    font-weight:normal;
+    font-size:1.0em;
+    background:#fefefe !important ;
+    padding:2px ;
+    margin:2px;
+    border:none}
+
+

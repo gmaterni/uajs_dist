@@ -1,0 +1,62 @@
+{
+    "row0": {
+        "anagid": {
+            "limit": 10,
+            "type": "int",
+            "label": "anagid"
+        },
+        "cognome": {
+            "limit": 30,
+            "type": "str",
+            "label": "Cognome"
+        },
+        "nome": {
+            "limit": 30,
+            "type": "str",
+            "label": "Nome"
+        },
+        "datanasc": {
+            "limit": 10,
+            "type": "date",
+            "label": "Data Nasc,"
+        },
+        "comunasc": {
+            "limit": 30,
+            "type": "str",
+            "label": "Comu.Nasc."
+        },
+        "naznasc": {
+            "limit": 10,
+            "type": "str",
+            "label": "Naz.Nasc."
+        },
+        "sesso": {
+            "limit": 2,
+            "type": "str",
+            "label": "MF"
+        },
+        "codfisc": {
+            "limit": 16,
+            "type": "str",
+            "label": "Cod.Fisc."
+        },
+        "piva": {
+            "limit": 11,
+            "type": "str",
+            "label": "P.Iva"
+        }
+    },
+
+    "row": {
+        "anagid": 231,
+        "cognome": "Porlotti",
+        "nome": "Alberto",
+        "datanasc": "13-11-2000",
+        "comunasc": "Roma",
+        "naznasc": "Italia",
+        "sesso": "m",
+        "codfisc": "trgpp50b24m082p",
+        "piva": 10023001
+    }
+
+}

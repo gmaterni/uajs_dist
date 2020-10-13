@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Language" content="it">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UaEjs DataJson</title>
+    <link type="text/css" src="../css/reset.css" rel="stylesheet">
+    <link type="text/css" href="datajson.css" rel="stylesheet">
+    <script type="text/javascript" src="../jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-ui-1.10.3.draggable.min.js"></script>
+    <script type="text/javascript" src="../js/beautify-html.js"></script>
+    <script type="text/javascript" src="../js/beautify.js"></script>
+    <script type="text/javascript" src="../uajs/uarq.js"></script>
+    <script type="text/javascript" src="../uajs/uaejs2.js"></script>
+    <script type="text/javascript" src="../uajs/uawindow.js"></script>
+    <script type="text/javascript" src="datajson.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        ua.init();
+    }
+    </script>
+</head>
+
+<body id='root'>
+    <div class="frm">
+        <form id="form1" class="frm">
+            <table class="frm">
+                <tr>
+                    <td>
+                        <label>URL data:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="dataurl" id="dataurl" value="./data/anag20.json" size="20" maxlength="40" />
+                    </td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td>
+                        <label>URL ejs:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="ejsurl" id="ejsurl" value="./ejs/anag.ejs" size="20" maxlength="40" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id='menu'>
+        <ul>
+            <li>
+                <a href='javascript:load();'>load</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="javascript:ua.hide();">hide all</a>
+            </li>
+            <li>
+                <a href="javascript:ua.show();">show all</a>
+            </li>
+            <li>
+                <a class="ejs tg" href="javascript:ua.toggle_ejs();">ejs</a>
+            </li>
+            <li>
+                <a class="ejs tg" href="javascript:ua.edit_ejs();">edit</a>
+            </li>
+            <li>
+                <a class="ejs" href="javascript:ua.compile();">compile</a>
+            </li>
+            <li>
+                <a class="data tg" href="javascript:ua.toggle_data();">data</a>
+            </li>
+            <li>
+                <a class="data tg" href="javascript:ua.edit_data();">edit</a>
+            </li>
+            <li>
+                <a class="js tg" href="javascript:ua.toggle_js();">js</a>
+            </li>
+            <li>
+                <a class="html tg" href="javascript:ua.toggle_html();">html</a>
+            </li>
+            <li>
+                <a class="srchtml tg" href="javascript:ua.toggle_srchtml();">src html</a>
+            </li>
+        </ul>
+    </div>
+    <div id='ejs'></div>
+    <div id='data'></div>
+    <div id='js'></div>
+    <div id='srchtml'></div>
+    <div id='htmlbr'></div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html >
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ejstest</title>
+
+<script type="text/javascript">
+var args = {
+  titolo: "Discipline",
+  anno: "anno=2000",
+  loc: {
+    val: "viterbo"
+  },
+  materie: ["lettere", "lingue", "fiolsofia", "matematica", "fisica", "informatica", "legge", "chimica"]
+}
+
+var fnEjs = function(pars) {
+  var up = [];
+  var titolo = pars['titolo'];
+  var anno = pars['anno'];
+  var loc = pars['loc'];
+  var materie = pars['materie'];
+  up.push("<h2>");
+  up.push(titolo);
+  up.push("</h2><br/ >  <ul>      ");
+  for (var i = 0; i < materie.length; i++) {
+    up.push("          <li> <a href=\"art/");
+    up.push(materie[i]);
+    up.push("\">");
+    up.push(materie[i]);
+    up.push(" </a> </li>    ");
+  }
+  up.push("  </ul>  <br/>  ");
+  up.push(anno);
+  up.push("  <br/>  ");
+  up.push(loc.val);
+  up.push("");;
+  return up.join("");
+};
+var html = fnEjs(args);
+</script>
+
+</head>
+<body>
+<div id='ua'></div>
+
+<script type="text/javascript" >
+
+ var e=document.getElementById('ua');
+ e.innerHTML=html;
+
+</script>
+
+</body>
+</html>

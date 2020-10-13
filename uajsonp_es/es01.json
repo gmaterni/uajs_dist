@@ -1,0 +1,7 @@
+FnEsempio({
+    "cognome": "Martini",
+    "nome": "Roberto",
+    "datanasc": "24-02-1980",
+    "sesso": "m",
+    "luogonasc": "Firenze"
+});

@@ -1,0 +1,51 @@
+<!doctype html>
+<html >
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ejstest</title>
+<script type="text/javascript">
+var args = {
+  "rows": [
+    [56, "Lausi", "Alfonso", "24-02-1950", 1, "mtrgpp50b24m082p"],
+    [52, "Fiorerosso", "Lucia", "24-02-1953", 2, "mtrgpp50b24m082p"],
+    [54, "Barmalloni", "Marta", "06-03-1982", 3, "mtrgpp50b24m082p"],
+    [56, "Gatti", "Massimiliano", "01-01-2010", 1, "gtsppp50b24m082p"]
+  ]
+}
+
+var fnEjs = function(pars) {
+  var up = [];
+  var rows = pars['rows'];
+  up.push("  <table class='list'>  <tr>    <td class='head'>id</td>    <td class='head'>cognome.</td>    <td class='head'>nome</td>    <td class='head'>data nasc.</td>    <td class='head'>sesso</td>    <td class='head'>codfisc</td>  </tr>  ");
+  for (var i = 0; i < rows.length; i++) {
+    up.push("  <tr id='row");
+    up.push(rows[i][0]);
+    up.push("'\ >    <td class='row'>");
+    up.push(rows[i][0]);
+    up.push("</td>    <td class='row'>");
+    up.push(rows[i][1]);
+    up.push("</td>    <td class='row'>");
+    up.push(rows[i][2]);
+    up.push("</td>    <td class='row'>");
+    up.push(rows[i][3]);
+    up.push("</td>    <td class='row'>");
+    up.push(rows[i][4]);
+    up.push("</td>    <td class='row'>");
+    up.push(rows[i][5]);
+    up.push("</td>  ");
+  }
+  up.push("  </table>  <br/>  ");;
+  return up.join("");
+};
+var html = fnEjs(args);
+</script>
+</head>
+<body>
+<div id='ua'></div>
+<script type="text/javascript" >
+ var e=document.getElementById('ua');
+ e.innerHTML=html;
+</script>
+</body>
+</html>

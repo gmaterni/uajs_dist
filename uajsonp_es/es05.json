@@ -1,0 +1,47 @@
+fn05({
+    "rows": {
+        "row": [{
+            "anagid": "56",
+            "cognome": "materni",
+            "nome": "giuseppe",
+            "datanasc": "24-02-1950",
+            "sesso": "m",
+            "luogonasc": "viterbo"
+        }, {
+            "anagid": "52",
+            "cognome": "purchiaroni",
+            "nome": "cristina",
+            "datanasc": "24-02-1953",
+            "sesso": "f",
+            "luogonasc": "orte"
+        }, {
+            "anagid": "54",
+            "cognome": "materni",
+            "nome": "marta",
+            "datanasc": "06-03-1982",
+            "sesso": "f",
+            "luogonasc": "terni"
+        }, {
+            "anagid": "51",
+            "cognome": "rossi",
+            "nome": "alberto",
+            "datanasc": "01-01-1980",
+            "sesso": "m",
+            "luogonasc": "roma"
+        }, {
+            "anagid": "49",
+            "cognome": "bianchi",
+            "nome": "mario",
+            "datanasc": "10-12-1979",
+            "sesso": "m",
+            "luogonasc": "roma"
+        }, {
+            "anagid": "48",
+            "cognome": "arlocchi",
+            "nome": "luigi",
+            "datanasc": "01-01-2000",
+            "sesso": "m",
+            "luogonasc": "firenze"
+        }]
+    }
+});

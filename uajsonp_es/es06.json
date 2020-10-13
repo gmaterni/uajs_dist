@@ -1,0 +1,11 @@
+fn06({
+  "description" : "Tutte le persone o le organizzazioni con cui desideri creare una relazione più profonda",
+  "displayName" : "Clienti",
+  "etag" : "\"dbtL3I-bcukG5w5yxxjs/ohcwN4lqtg1HCxxx3tJ7HnJ9Q\"",
+  "id" : "380535a28cc0e136",
+  "kind" : "plus#circle",
+  "people" : {
+    "totalItems" : 0
+  },
+  "enabledForSharing" : true
+});

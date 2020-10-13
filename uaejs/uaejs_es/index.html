@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="it">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UaEjs Esempi</title>
+
+    <link type="text/css" src="../css/reset.css" rel="stylesheet">
+    <link type="text/css" href="es.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="../jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-ui-1.10.3.draggable.min.js"></script>
+
+    <script type="text/javascript" src="../js/beautify-html.js"></script>
+    <script type="text/javascript" src="../js/beautify.js"></script>
+
+    <script type="text/javascript" src="../uajs/uarq.js"></script>
+    <script type="text/javascript" src="../uajs/uaejs2.js"></script>
+    <script type="text/javascript" src="../uajs/uawindow.js"></script>
+
+
+
+    <script type="text/javascript" src="es.js"></script>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        ua.init();
+    }
+    </script>
+</head>
+<body id='root'>
+    <div id='menu'>
+        <ul>
+            <li>
+                <a href="javascript:ua.hide();">hide all</a>
+            </li>
+            <li>
+                <a href="javascript:ua.show();">show all</a>
+            </li>
+            <li>
+                <a class="ejs tg" href="javascript:ua.toggle_ejs();">ejs</a>
+            </li>
+            <li>
+                <a class="ejs tg" href="javascript:ua.edit_ejs();">edit</a>
+            </li>
+            <li>
+                <a class="ejs" href="javascript:ua.compile();">compile</a>
+            </li>
+            <li>
+                <a class="data tg" href="javascript:ua.toggle_data();">data</a>
+            </li>
+            <li>
+                <a class="data tg" href="javascript:ua.edit_data();">edit</a>
+            </li>
+            <li>
+                <a class="js tg" href="javascript:ua.toggle_js();">js</a>
+            </li>
+            <li>
+                <a class="html tg" href="javascript:ua.toggle_html();">html</a>
+            </li>
+            <li>
+                <a class="srchtml tg" href="javascript:ua.toggle_srchtml();">src html</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href='javascript:es.es0();'>es0</a>
+            </li>
+            <li>
+                <a href='javascript:es.es1();'>es1</a>
+            </li>
+            <li>
+                <a href='javascript:es.es2();'>es2</a>
+            </li>
+            <li>
+                <a href='javascript:es.es3();'>es3</a>
+            </li>
+            <li>
+                <a href='javascript:es.es4();'>es4</a>
+            </li>
+            <li>
+                <a href='javascript:es.es5();'>es5</a>
+            </li>
+        </ul>
+    </div>
+    <div id='ejs'></div>
+    <div id='data'></div>
+    <div id='js'></div>
+    <div id='srchtml'></div>
+    <div id='htmlbr'></div>
+</body>
+</html>

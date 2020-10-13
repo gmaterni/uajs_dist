@@ -1,0 +1,16 @@
+ <form id='form1' class='frm'>
+<table class='frm'>
+ <%
+ for( var col in row0){
+   var value=row0[col].value;
+   var limit=row0[col].limit;
+   var label=row0[col].label;
+ %>
+  <tr>
+    <td><label><%=label%>:</label></td>
+    <td><input type='text' name='<%=col%>' id='<%=col%>' value='<%=value%>' size='<%=limit%>' maxlength='<%=limit%>' /></td>
+  </tr>
+  <%}%>
+</table>
+</form>
+  

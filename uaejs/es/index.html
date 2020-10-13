@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Language" content="it">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="../jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../uajs/uarq.js"></script>
+    <title>es</title>
+</head>
+
+<body>
+
+    <div id='ua'>
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+var ejs = UaRq.rqsGet("es.ejs", null, null, 'text').responseText;
+var data = UaRq.getJson("es.json", {}, null, null);
+var html = UaEjs.build(ejs, data);
+document.getElementById('ua').innerHTML = html;
+
+</script>
+
+</html>

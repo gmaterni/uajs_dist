@@ -1,0 +1,69 @@
+{
+    "row0": {
+        "anagid": {
+            "limit": 2,
+            "type": "int",
+            "label": "anagid"
+        },
+        "cognome": {
+            "limit": 20,
+            "type": "str",
+            "label": "cognome"
+        },
+        "nome": {
+            "limit": 20,
+            "type": "str",
+            "label": "nome"
+        },
+        "datanasc": {
+            "limit": 10,
+            "type": "date",
+            "label": "Data Nasc,"
+        },
+        "sesso": {
+            "limit": 1,
+            "type": "str",
+            "label": "MF"
+        },
+        "codfisc": {
+            "limit": 16,
+            "type": "str",
+            "label": "Cod.Fisc."
+        }
+    },
+    "rows": [
+        {
+            "anagid": 56,
+            "cognome": "Catoni",
+            "nome": "Antonio",
+            "datanasc": "24-02-1950",
+            "sesso": "m",
+            "codfisc": "mtrgpp50b24m082p"
+        },
+        {
+            "anagid": 52,
+            "cognome": "Lausi",
+            "nome": "Simone",
+            "datanasc": "24-02-1953",
+            "sesso": "m",
+            "codfisc": "mtrgpp50b24m082p"
+        },
+        {
+            "anagid": 54,
+            "cognome": "Arlò",
+            "nome": "Marta",
+            "datanasc": "06-03-1982",
+            "sesso":"f" ,
+            "codfisc": "mtrgpp50b24m082p"
+        },
+        {
+            "anagid": 56,
+            "cognome": "Allorni",
+            "nome": "Tommaso",
+            "datanasc": "01-01-2012",
+            "sesso": "m",
+            "codfisc": "gttspd50b24m082p"
+        }
+]
+
+}
